@@ -58,6 +58,8 @@ module.exports = grammar({
         $.comment,
       ),
 
+    comments: ($) => token(/[\s\t\r\n]+/),
+
     // Attribute/directive statements (e.g. @use "terminal" as term)
     attribute_statement: ($) =>
       seq(

@@ -78,6 +78,13 @@
         }
       ]
     },
+    "comments": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PATTERN",
+        "value": "[\\s\\t\\r\\n]+"
+      }
+    },
     "attribute_statement": {
       "type": "SEQ",
       "members": [

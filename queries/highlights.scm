@@ -6,3 +6,8 @@
 ["let"] @keyword
 ["const"] @keyword
 ["defer"] @keyword
+["as"] @keyword
+["return"]
+
+["int"] @type
+["char"] @type

@@ -1,0 +1,14 @@
+@use "terminal" as term
+@use "string" as string
+
+const main = fn () int {
+    outputln("Press any key...");
+    let key: char = term::getch();
+    outputln("You pressed: ", string::from_char(key));
+
+    let password: *char = term::getpass("Enter password: ");
+    defer free(password);
+    outputln("Password entered");
+
+    return 0;
+}
